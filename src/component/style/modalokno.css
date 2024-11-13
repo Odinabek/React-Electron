@@ -1,61 +1,56 @@
-.modal{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4 );
-    position: fixed;
-    top: 0;
-    left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transform: translateZ(-105px) scale(1.07);
-	opacity: 100%;
-    transition: 0.50s;
-    
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(-105px) scale(1.07);
+  opacity: 100%;
+  transition: 0.5s;
 }
-.modal-active{
-	transform: scale(0);
-    
-   
+.modal-active {
+  transform: scale(0);
 }
-.modal-container{
-   
-   text-align: center;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: transparent;
-    height: 500px;
-    width: 300px;
-    transition: 0.10s;
-    opacity:100%;
-    transform: translate(0, -10%);
+.modal-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: transparent;
+  height: 400px;
+  width: 300px;
+  transition: 0.1s;
+  opacity: 100%;
+  transform: translate(0, -10%);
 }
-.modal-container-active{
-    transform: scale(0);
-    transition: 0.10s;
-
+.modal-container-active {
+  transform: scale(0);
+  transition: 0.1s;
 }
-.buttonModal{
-    width: 150px;
-	height: 50px;
-	font-family: Arial;
-	text-transform: uppercase;
-	background-color: transparent;
-	color: #fff;
-	border-radius: 50px;
-	border: 1px #fafcff solid;
-	outline: none;
-	cursor: pointer;
-	opacity: 50%; 
-    margin-top: 3%;
-	transition: 0.50s; 
+.buttonModal {
+  width: 150px;
+  height: 50px;
+  font-family: Arial;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 50px;
+  border: 1px #fafcff solid;
+  outline: none;
+  cursor: pointer;
+  opacity: 50%;
+  margin-top: 3%;
+  transition: 0.5s;
 }
-.buttonModal:hover{
- opacity: 100%; 
- height: 60px;
- transition: 0.50s;
+.buttonModal:hover {
+  opacity: 100%;
+  height: 60px;
+  transition: 0.5s;
 }
 
-.menuLogo{
-    opacity: 80%;
+.menuLogo {
+  opacity: 80%;
 }

@@ -57,6 +57,8 @@ a program for learning programming languages</h1>
 </section>
     
       </div>
+      
     )
+
   }
   export{Home};
