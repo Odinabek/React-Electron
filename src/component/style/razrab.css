@@ -1,0 +1,226 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: kamerik-k;
+	color: #fff;
+	overflow-x: hidden;
+}
+.scene {
+	height: 550vh;
+}
+.layer {
+	height: 100vh;
+	width: 100vw;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation-timeline: scroll();
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	animation-range: 0 300vh;
+}
+#layer3 {
+	background-image: url('../img/layer-7.jpg');
+
+}
+
+
+
+.layer:nth-child(1) { animation-name: animation-1; }
+@keyframes animation-1 { to { scale: 1.25; } }
+
+.layer:nth-child(2) { animation-name: animation-2; }
+@keyframes animation-2 { to { scale: 1.275; } }
+
+.layer:nth-child(3) { animation-name: animation-3; }
+@keyframes animation-3 { to { scale: 1.5; } }
+
+.layer:nth-child(4) { animation-name: animation-4; }
+@keyframes animation-4 { to { scale: 2; } }
+
+
+
+.layer:nth-child(5) {
+	opacity: 0;
+	animation-range: 250vh 300vh;
+	animation-name: animation-end;
+}
+@keyframes animation-end { to { opacity: 1; } }
+
+.layer__content {
+	padding: 4vh 4.75vw;
+	backdrop-filter: blur(25px) brightness(.98);
+	animation-timeline: scroll();
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	animation-range: 0 45vh;
+	animation-name: animation-head;
+}
+@keyframes animation-head { to { opacity: 0; filter: blur(20px); } }
+
+.layer__content h1 {
+	text-transform: uppercase;
+	font-size: calc(var(--index) * 4.5);
+	text-align: center;
+	line-height: .9em;
+	letter-spacing: -.15vw;
+}
+.layer__end h3 {
+	font-size: 4rem;
+	position: relative;
+}
+.layer__end::before {
+	content: '';
+	background-color: #010B19;
+	inset: 0;
+	position: absolute;
+	opacity: 0;
+	animation-timeline: scroll();
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	animation-range: 300vh 450vh;
+	animation-name: animation-bg;
+}
+@keyframes animation-bg { to { opacity: 1; } }
+
+
+
+
+body {
+	background-color: #5589B1;
+	color: #fff;
+	/* font-family: kamerik-3d; */
+	
+}
+.logo {
+	position: absolute;
+	transform: translate(350%);
+	z-index: 1;
+	opacity: 50%;
+}
+.layers {
+	perspective: 1000px;
+	overflow: hidden;
+}
+.layers__container {
+	height: 100vh;
+	min-height: 1000px;
+	transform-style: preserve-3d;
+	transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+	will-change: transform;
+	transition: transform var(--transition);
+}
+.layers__item {
+	position: absolute;
+	inset: -5vw;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.layer-1 {
+	transform: translateZ(-105px) scale(1.07);
+}
+
+.layer-2 {
+	position: absolute;
+	inset: -5vw;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateZ(80px) scale(.88);
+	transform: translate(-550px, -20%);
+}
+
+.layer-3 {
+	transform: translateZ(180px) scale(.8);
+	
+}
+
+
+
+.hero-content {
+	font-size: calc(var(--index) * 2.9);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: calc(var(--index) * -.15);
+	line-height: 1.35em;
+	margin-top: calc(var(--index) * 5.5);
+	
+}
+.hero-n{
+	transform: scale(0);
+}
+.box-content{
+	transform: translate(10%);
+}
+.hero-content span {
+	display: block;
+}
+.hero-content__p {
+	text-transform: none;
+	font-family: merriweather-italic-3d;
+	letter-spacing: normal;
+	font-size: calc(var(--index) * .73);
+	line-height: 3;
+}
+.button-start {
+	width: 150px;
+	height: 50px;
+	font-family: Arial;
+	text-transform: uppercase;
+	background-color: transparent;
+	color: #fff;
+	border-radius: 50px;
+	border: 1px #fafcff solid;
+	outline: none;
+	cursor: pointer;
+	opacity: 50%;
+	}
+.button-start:hover{
+opacity: 100%;
+
+}
+
+.button-option {
+	position: relative;
+	transform: translate(-500px, -600%);
+	width: 100px;
+	height: 50px;
+	font-family: Arial;
+	text-transform: uppercase;
+	background-color: transparent;
+	color: #fff;
+	border-radius: 50px;
+	border: 1px #fafcff solid;
+	outline: none;
+	cursor: pointer;
+	opacity: 50%;
+}
+
+.button-option:hover{
+	opacity: 100%;
+	}
+
+.cheked{
+	width: 50px;
+	height: 50px;
+	border: #5589B1 solid 1px;
+	background-color: #5589B1;
+	border-radius: 50px;
+}
+
+
+

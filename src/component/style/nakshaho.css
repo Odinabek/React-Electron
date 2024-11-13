@@ -1,0 +1,122 @@
+
+
+
+body {
+	background-color: #5589B1;
+	color: #fff;
+	font-family: kamerik-3d;
+	
+}
+
+.layers {
+	perspective: 1000px;
+	overflow: hidden;
+}
+.layers__container {
+	height: 100vh;
+	min-height: 1000px;
+	transform-style: preserve-3d;
+	transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+	will-change: transform;
+	transition: transform var(--transition);
+}
+.layers__item {
+	position: absolute;
+	inset: -5vw;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.layer-1 {
+	transform: translateZ(-105px) scale(1.07);
+}
+
+.layer-2 {
+	position: absolute;
+	inset: -5vw;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateZ(80px) scale(.88);
+	transform: translate(-550px, -20%);
+}
+
+.layer-3 {
+	transform: translateZ(200px) scale(.8);
+
+}
+
+
+
+.hero-content {
+	font-size: calc(var(--index) * 2.9);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: calc(var(--index) * -.15);
+	line-height: 1.35em;
+	margin-top: calc(var(--index) * 5.5);
+	transform: translate(20%);
+	
+}
+.hero-n{
+	transform: scale(0);
+	
+}
+
+.hero-content span {
+	display: block;
+}
+.hero-content__p {
+	text-transform: none;
+	font-family: merriweather-italic-3d;
+	letter-spacing: normal;
+	font-size: calc(var(--index) * .73);
+	line-height: 3;
+}
+.button-start {
+	width: 150px;
+	height: 50px;
+	font-family: Arial;
+	text-transform: uppercase;
+	background-color: transparent;
+	color: #fff;
+	border-radius: 50px;
+	border: 1px #fafcff solid;
+	outline: none;
+	cursor: pointer;
+	opacity: 50%;
+	}
+.button-start:hover{
+opacity: 100%;
+}
+
+
+
+.cheked{
+	width: 40px;
+	height: 40px;
+	border: #5589B1 solid 10px;
+	background-color: #5589B1;
+	border-radius: 50px;
+}
+
+.test{
+	width: 500px;
+	height: 50px;
+	border: black solid 2px;
+	transition: 0.50s;
+}
+
+.test-open{
+	width: 500px;
+	height: 500px;
+	border: black solid 2px;
+	border-radius: 15px;
+	transform: scale(1);
+	transition: 0.50s;
+}

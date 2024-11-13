@@ -1,0 +1,28 @@
+.n-open{
+	
+	transform: scale(0);
+	transition: .0s;
+}
+.open-content{
+	transform: scale(1);
+}
+.button-info {
+	width: 180px;
+	height: 60px;
+	font-family: Arial;
+	text-transform: uppercase;
+	background-color: transparent;
+	color: #fff;
+	border-radius: 50px;
+	border: 1px #fafcff solid;
+	outline: none;
+	cursor: pointer;
+	opacity: 50%;
+	margin-top: 3%;
+	transition: 0.50s;
+	}
+
+	.button-info:hover{
+		opacity: 100%;
+		height: 70px;
+		}
